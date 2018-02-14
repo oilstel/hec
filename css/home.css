@@ -1,0 +1,155 @@
+html, body {
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;;
+  font-size: 14px;;
+  padding: .5em;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav {
+  z-index: 1;
+}
+
+nav a {
+
+}
+
+a {
+  display: block;
+  margin-bottom: .2em;;
+}
+
+.page {
+  max-width: 400px;
+  margin: auto auto 0;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  transition: all 0s;
+  z-index: -10;
+}
+
+header:hover {
+  transform: scale(5);
+  cursor: zoom-in;
+}
+
+footer {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+}
+
+span#piss {
+  width: 60px;
+  height: 50px;
+  background: url("../images/piss-logo.svg") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  cursor: progress;
+}
+
+span#piss:hover {
+  -webkit-animation: rotation 100s infinite linear;
+}
+
+.subscribe-hover {
+  background-color: #000;
+  border-radius: 200%;
+}
+
+form {
+  width: 400px;
+  display: relative;
+  margin: auto auto 0;
+  z-index: 20;
+}
+
+input {
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;;
+  font-size: 14px;
+  outline: 0;
+  margin-bottom: .2em;
+  border: 1px solid #000;
+  color: #000;
+  /* border-radius: 100%; */
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  display: inline;
+  text-align: center;
+  -webkit-appearance: none;
+  /* margin-bottom: 200px; */
+}
+
+::placeholder {
+  color: #000;
+}
+
+input.text {
+  margin-right: 5px;
+  width: 200px;
+}
+
+input.submit {
+  cursor: pointer;
+  color: #000;
+  /* background-image: linear-gradient(to bottom, #d1d1d1, #b7b7b7, #9f9f9f, #868686, #6f6f6f); */
+  /* background-image: linear-gradient(to bottom, #7ed582, #6cbc6f, #5aa35c, #498b49, #387438); */
+  background-image: none;
+  background-color: #fff;
+  width: 100px;
+}
+
+input.submit:hover {
+  color: #000;
+  /* background-image: linear-gradient(to top, #d1d1d1, #b7b7b7, #9f9f9f, #868686, #6f6f6f); */
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 535px) {
+  nav {
+    position: relative;
+  }
+
+  .page {
+    max-width: 100%;
+  }
+
+  header {
+    margin-top: 4em;
+  }
+
+  footer {
+    margin-top: 9em;
+    position: relative;
+    display: block;
+    left: .2em;
+  }
+
+  footer span#piss {
+    display: block;
+    margin-top: .2em;;
+  }
+}
