@@ -14,9 +14,6 @@
         cursor: zoom-out;
       }
 
-      header {
-      }
-
       .universe {
         transform: scale(5);
       }
@@ -29,6 +26,12 @@
       header {
         filter: blur(1px);
         -webkit-animation: rotation 100s infinite linear;
+      }
+
+      @media (max-width: 535px) {
+        .universe {
+          transform: scale(2);
+        }
       }
     </style>
 
