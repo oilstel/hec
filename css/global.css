@@ -1,0 +1,171 @@
+html, body {
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;;
+  font-size: 14px;;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.universe {
+  margin-top: 40vh;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav {
+  z-index: 1;
+  position: absolute;
+}
+
+p {
+  line-height: 20px;
+}
+
+a {
+  display: block;
+  margin-bottom: .2em;;
+}
+
+.center {
+  max-width: 330px;
+  height: 100vh;
+  margin: auto auto 0;
+  text-align: center;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+  padding: 10px;
+}
+
+.subscribe-box {
+  margin-top: -5em;
+}
+
+header {
+  margin-bottom: 2em;
+  transition: all 0s;
+  z-index: -10;
+  display: block;
+}
+
+header:hover {
+  transform: scale(5);
+  cursor: zoom-in;
+  margin-top: -2em;
+  margin-bottom: 4em;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 10px;
+}
+
+span#piss {
+  width: 60px;
+  height: 50px;
+  background: url("../images/piss-logo.svg") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  cursor: progress;
+}
+
+span#piss:hover {
+  -webkit-animation: rotation 100s infinite linear;
+}
+
+.subscribe-hover {
+  background-color: #000;
+  border-radius: 200%;
+}
+
+form {
+  display: relative;
+  margin: auto auto 0;
+  z-index: 20;
+}
+
+input {
+  font-family: TimesNewRoman, "Times New Roman", Times, serif;;
+  font-size: 14px;
+  outline: 0;
+  margin-bottom: .2em;
+  border: 1px solid #000;
+  color: #000;
+  /* border-radius: 100%; */
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  display: inline;
+  text-align: center;
+  -webkit-appearance: none;
+  /* margin-bottom: 200px; */
+}
+
+::placeholder {
+  color: #000;
+}
+
+input.text {
+  margin-right: 5px;
+  width: 200px;
+}
+
+input.submit {
+  cursor: pointer;
+  color: #000;
+  /* background-image: linear-gradient(to bottom, #d1d1d1, #b7b7b7, #9f9f9f, #868686, #6f6f6f); */
+  /* background-image: linear-gradient(to bottom, #7ed582, #6cbc6f, #5aa35c, #498b49, #387438); */
+  background-image: none;
+  background-color: #fff;
+  width: 100px;
+}
+
+input.submit:hover {
+  color: #000;
+  /* background-image: linear-gradient(to top, #d1d1d1, #b7b7b7, #9f9f9f, #868686, #6f6f6f); */
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 535px) {
+
+  input.text, input.submit {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  .center {
+    width: 220px;
+  }
+
+  footer span#piss {
+    display: block;
+    margin: auto;
+  }
+}
