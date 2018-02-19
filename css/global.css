@@ -11,10 +11,6 @@ html, body {
   padding: 0;
 }
 
-.universe {
-  margin-top: 40vh;
-}
-
 a {
   color: #000;
   text-decoration: none;
@@ -182,7 +178,6 @@ input.submit:hover {
   }
 
   .center {
-    height: 50vh;
   }
 
   .page {
