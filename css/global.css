@@ -23,10 +23,14 @@ a {
 nav {
   z-index: 1;
   position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
 }
 
 p {
   line-height: 20px;
+  margin: 20px auto auto;
 }
 
 a {
@@ -34,9 +38,23 @@ a {
   margin-bottom: .2em;;
 }
 
+h1 {
+ font-size: 170%;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 10px !important;
+  margin: 0;
+}
+
+h2 {
+  font-size: 100%;
+}
+
 .center {
   max-width: 330px;
-  height: 100vh;
+  height: 80vh;
   margin: auto auto 0;
   text-align: center;
   display: -ms-flexbox;
@@ -52,7 +70,6 @@ a {
 }
 
 .subscribe-box {
-  margin-top: -5em;
 }
 
 header {
@@ -151,7 +168,7 @@ input.submit:hover {
   }
 }
 
-@media (max-width: 535px) {
+@media (max-width: 605px) {
 
   input.text, input.submit {
     display: block;
@@ -160,12 +177,16 @@ input.submit:hover {
     width: 200px;
   }
 
-  .center {
+  .home {
     width: 220px;
+  }
+
+  .page {
+    text-align: left;
   }
 
   footer span#piss {
     display: block;
-    margin: auto;
+    margin: 10px auto 10px;
   }
 }
