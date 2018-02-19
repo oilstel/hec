@@ -185,6 +185,11 @@ input.submit:hover {
     text-align: left;
   }
 
+  footer {
+    position: relative;
+    display: block;
+  }
+
   footer span#piss {
     display: block;
     margin: 10px auto 10px;
