@@ -181,6 +181,10 @@ input.submit:hover {
     width: 220px;
   }
 
+  .center {
+    height: 50vh;
+  }
+
   .page {
     text-align: left;
   }
